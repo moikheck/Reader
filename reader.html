@@ -1,0 +1,154 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna on the Run</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script src="reader.js"></script>
+    <link rel="stylesheet" type="text/css" href="reader.css" media="screen" />
+</head>
+<body id="body">
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div class="back-mobile" onclick="goPrevPage()"></div>
+        <div class="forward-mobile" onclick="goNextPage()"></div>
+        <div id="p1" class="paper">
+            <div class="front">
+                <select id="chapter-cover" onchange="changeChapter()">
+                </select>
+                <div id="f1" class="front-content">
+                    <img src="front.png"/>
+                </div>
+            </div>
+            <div class="back">
+                <div id="page1" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="page2" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page3" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="page4" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page5" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 4 -->
+        <div id="p4" class="paper">
+            <div class="front">
+                <div id="page6" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page7" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 5 -->
+        <div id="p5" class="paper">
+            <div class="front">
+                <div id="page8" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page9" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 6 -->
+        <div id="p6" class="paper">
+            <div class="front">
+                <div id="page10" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page11" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 7 -->
+        <div id="p7" class="paper">
+            <div class="front">
+                <div id="page12" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page13" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 8 -->
+        <div id="p8" class="paper">
+            <div class="front">
+                <div id="page14" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page15" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 9 -->
+        <div id="p9" class="paper">
+            <div class="front">
+                <div id="page16" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page17" class="back-content">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 10 -->
+        <div id="p10" class="paper">
+            <div class="front">
+                <div id="page18" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="page19" class="back-content">
+                    <select id="chapter-back" onchange="changeChapter()">
+                    </select>
+                    <div id="f1" class="front-content">
+                        <img src="back.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+
+    <select id="chapter-mobile" onchange="changeChapter()">
+        <option value="1">Chapter 1</option>
+        <option value="2">Chapter 2</option>
+    </select>
+      
+      
+    
+</body>
